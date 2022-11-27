@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main"> 
+        <div class="q q1">      
+            <p id="text1">YAZININ BOYUTUNU DEĞİŞTİR!!!</p>
+            <button class="btn" onclick="changefontsize()">FIRE UP!</button>
+            <button class="btn" onclick="defaultfontsize()">DEFAULT!</button>
+        </div>
+
+        <div class="q q2">
+            <h4>Küpün Hacmi</h4>
+            <label for="cube">Küp a uzunluğu(m)</label><input type="number" id="cube"><br><br>
+            <label for="result">Sonuç (m) : </label><input type="number" disabled id="display">    
+            <button class="btn" onclick="getValue()">FIRE UP!</button>
+            <button class="btn" onclick="clearAll()">DEFAULT!</button>    
+            
+        </div>
+        <div class="q q3">
+            <h4>Alkol Kullanma İzni</h4>
+            <label for="alcohol">Ülke Seçiniz : </label><select name="country" id="country">
+                                                            <option value="null" selected disabled>Ülke Seçin</option>
+                                                            <option value="TR">Türkiye</option>
+                                                            <option value="USA">Amerika</option>
+                                                        </select><br>
+            <label for="age">Yaşınızı Girin : </label><input type="number" id="age"><br><br>
+            <label for="result">Sonuç: </label><input type="text" disabled id="display2"><br><br>
+            <button class="btn" onclick="getValues()">FIRE UP!</button>
+            <button class="btn" onclick="clearAll2()">DEFAULT!</button>
+        </div>
+        <div class="q q4">4</div>
+
+        <div class="q q5">
+            <h4>Array İçideki Sayıları Toplama</h4>
+            <label for="sum">Sayı Girin : </label><input type="number" id="nmb1"><br>
+            <label for="sum">Sayı Girin : </label><input type="number" id="nmb2"><br>
+            <label for="sum">Sayı Girin : </label><input type="number" id="nmb3"><br>
+            <label for="sum">Sayı Girin : </label><input type="number" id="nmb4"><br><br>
+            <label for="result">Sonuç: </label><input type="number" disabled id="display5"><br><br>
+            <button class="btn" onclick="getValues5()">FIRE UP!</button>
+            <button class="btn" onclick="clearAll5()">DEFAULT!</button>
+
+        </div>
+    </div> 
+
+
+    <script src="main.js"></script>    
+</body>
+</html>
